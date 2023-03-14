@@ -12,7 +12,7 @@ class ReplacemntDecicder:
     :param: `part` -> The part name that should be replaced.
     """
 
-    df_source = DataSource('/Users/Tomer/Downloads/Service BI Analyst - Home Assignment.xlsx')
+    df_source = DataSource('Service BI Analyst - Home Assignment.xlsx')
     df_compatability = df_source.get_compatability()
     df_inventory = df_source.get_inventory()
 
