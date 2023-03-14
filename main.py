@@ -24,7 +24,7 @@ if __name__ == '__main__':
         Choose part name:\n
         """
         
-    df_source = DataSource('/Users/Tomer/Downloads/Service BI Analyst - Home Assignment.xlsx')
+    df_source = DataSource('Service BI Analyst - Home Assignment.xlsx')
     df_components = df_source.get_component().to_dict()
     parts = [v for k,v in df_components['component'].items()]
     part_name_opt = st.selectbox(label=label, options=parts)
